@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        :root{
+            --box-color:red;
+            --maxw:333px;
+        }
+
+        .box{
+            --box-color:rgb(255, 0, 98);
+            background-color: aqua;
+
+            max-width: var(--maxw);
+            color: var(--box-color);
+            width: 200px;
+            height: 200px;
+            margin: 2px 10px;
+            border:2px;
+            border-style: solid;
+            border-color: var(--box-color);
+
+        }
+        .container{
+            display: flex;
+            background-color: var(--box-color);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    --box-color:red;
+    color:var(--box-color);
+</body>
+</html>
